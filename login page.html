@@ -55,18 +55,14 @@
         </div>
     </div>
     
-            
-             
-        
-    
-    
+   
 </body>
 <script>
   function login(){
     let phonumber=document.getElementById('phonenumber').value;
     let password=document.getElementById('password').value;
     console.log(localStorage.getItem('mobilenumber'));
-    console.log(phonumber)
+   
 
     if(localStorage.getItem('mobilenumber')==phonumber && localStorage.getItem('password')==password){
         console.log(365841)
@@ -74,7 +70,7 @@
         window.location.replace("product.html");
     }
     else{
-        window.alert("llogin failed")
+        window.alert("login failed")
     }
   }
 
